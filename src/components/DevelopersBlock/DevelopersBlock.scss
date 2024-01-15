@@ -1,0 +1,135 @@
+.developers {
+  display: flex;
+  flex-direction: column;
+  margin-top: 184px;
+  @include tablet {
+  }
+  @include mobile {
+    align-items: center;
+    margin-top: 90px;
+  }
+
+ 
+
+  &__title {
+    color: var(--black);
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 63.72px;
+    margin-bottom: 57px;
+    text-align: center;
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  
+}
+.developers-item {
+  display: flex;
+  flex-direction: column;
+  @include mobile {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 14px 24px 0 24px;
+  }
+  width: 384px;
+  padding: 24px 24px 0 24px;
+  border-radius: 16px;
+  background: #fff;
+
+  &_position {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    @include mobile {
+      font-size: 13px;
+    }
+  }
+
+  &__info {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 329px;
+    margin-bottom: 14px;
+    @include mobile {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-weight: 400;
+      line-height: 24px;
+    }
+    span {
+      color: var(--black);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      @include mobile {
+        font-size: 13px;
+      }
+    }
+  }
+
+  &__developer {
+    display: flex;
+    gap: 12px;
+    
+  }
+
+  
+ 
+  &__name {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 8px;
+    @include mobile {
+      font-size: 13px;
+      margin: 0;
+    }
+  }
+}
+
+
+.developers-company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 127px;
+  @include mobile {
+    margin-top: 60px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    @include desktop-small {
+      flex-wrap: wrap;
+    }
+    @include mobile {
+      justify-content: center;
+    }
+  }
+  &__rowtwo {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include mobile {
+      margin-top: 20px;
+      justify-content: center;
+    }
+  }
+
+  &__img {
+    flex-shrink: 0;
+  }
+}

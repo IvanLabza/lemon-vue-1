@@ -1,0 +1,119 @@
+.always {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  @include desktop-small {
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    @include desktop-small {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    color: var(--black);
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 88px;
+    margin-bottom: 38px;
+    @include tablet {
+      text-align: center;
+      font-size: 68px;
+    }
+    @include mobile {
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__desc {
+    color: rgba(18, 16, 12, 0.7);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 31.92px;
+    max-width: 460px;
+    margin-bottom: 48px;
+    @include tablet {
+      text-align: center;
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 13px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__img {
+    flex-shrink: 0;
+    padding-left: 10px;
+    @include desktop-small {
+      display: none;
+    }
+  }
+}
+.always-link {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; 
+  }
+  &__components {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    color: var(--black);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.5px;
+    border-radius: 16px;
+    background: #ffae33;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    padding: 12px 46px;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      color: white;
+      opacity: 0.8;
+    }
+    @include mobile {
+      font-size: 13px;
+      padding: 7px 35px;
+      pointer-events: none;
+
+    }
+  }
+
+  &__desc {
+    color: rgba(18, 16, 12, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    gap: 28px;
+    img {
+      flex-shrink: 0;
+    }
+  }
+}

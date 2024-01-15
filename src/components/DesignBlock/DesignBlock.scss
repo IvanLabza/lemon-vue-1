@@ -1,0 +1,113 @@
+.design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    color: var(--black);
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 71.82px;
+    margin-bottom: 47px;
+    @include tablet {
+      font-size: 40px;
+    }
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  &__img {
+    transition: .3s all ease-in-out;
+    &:hover{
+      border-radius: 14px;
+      box-shadow: -2px 2px 15px 8px rgba(255, 138, 0, 0.40);
+    }
+    @include mobile{
+      pointer-events: none;
+    }
+    
+  }
+
+  &__desc {
+    color: var(--c-desc);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31.92px;
+    max-width: 877px;
+    margin-top: 49px;
+    @include tablet {
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+}
+.design-btn {
+  display: flex;
+  margin-top: 45px;
+  gap: 16px;
+  
+ 
+  &__chrome {
+    display: flex;
+    gap: 10px;
+    color: var(--black);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.86px;
+    border-radius: 9px;
+    background: #ffffff;
+    box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.1);
+    padding: 7px 12px;
+    position: relative;
+    z-index: 1;
+    @include mobile {
+      font-size: 10px;
+      padding: 3px 6px;
+    }
+    
+  }
+  &__firefox {
+    display: flex;
+    gap: 10px;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 31.86px;
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.1);
+    padding: 7px 12px;
+    position: relative;
+    @include mobile {
+      font-size: 10px;
+      padding: 3px 6px;
+    }
+  }
+
+  &__bg {
+    display: inline-block;
+    position: relative;
+   
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 1px solid #000;
+      pointer-events: none;
+    }
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+
+
+}

@@ -19,6 +19,7 @@
 			<router-link to="/">Login</router-link>
 		</div>
 	</div>
+	
 </template>
 
 <script>
