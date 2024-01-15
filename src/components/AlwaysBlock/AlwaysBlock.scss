@@ -87,10 +87,7 @@
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
     padding: 12px 46px;
     transition: 0.3s all ease-in-out;
-    &:hover {
-      color: white;
-      opacity: 0.8;
-    }
+    
     @include mobile {
       font-size: 13px;
       padding: 7px 35px;

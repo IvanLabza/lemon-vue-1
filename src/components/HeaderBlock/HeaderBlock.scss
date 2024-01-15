@@ -23,9 +23,7 @@
 			position: relative;
 			transition: color 0.3s ease-in-out; 
 
-			&:hover {
-			  color: #FFAE33; 
-			}
+			
 		
 			&::before {
 			  content: "";
@@ -39,9 +37,7 @@
 			  transition: transform 0.3s ease;
 			}
 		
-			&:hover::before {
-			  transform: scaleX(1);
-			}
+			
 		}
 		@include tablet {
 			position: fixed;
@@ -52,10 +48,10 @@
 			flex-direction: column;
 			justify-content: center;
 			background: rgba(0, 0, 0, 0.8);
-			transform: translateX(120%);
+			transform: translateY(120%);
 			transition: 0.2s ease-in;
 			&.is-active {
-				transform: translateX(0);
+				transform: translateY(0);
 			}
 			a {
 				color: #fff;

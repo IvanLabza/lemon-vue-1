@@ -1,6 +1,6 @@
 <template>
   <div class="swiper">
-    <swiper :slides-per-view="'auto'" :space-between="30" :grid="{
+    <swiper :autoplay="{ delay: 1500 }" :slides-per-view="'auto'" :space-between="30" :grid="{
       }" :pagination="{
   clickable: true,
 }" class="mySwiper">
@@ -28,7 +28,7 @@
 
       </swiper-slide>
     </swiper>
-    <swiper :direction="'vertical'"  :space-between="24" :pagination="{
+    <swiper :direction="'vertical'" :autoplay="{ delay: 1500 }"  :space-between="24" :pagination="{
         clickable: true,
       }" class="mySwiper-mobile">
       <swiper-slide v-for="(developer, index) in developers" :key="`${developer.name}-${index}`">
