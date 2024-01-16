@@ -1,5 +1,16 @@
 <template>
-	.
+	<h1>vIf</h1>
+	<p v-if="isVisible">This paragraph is visible.</p>
+	<h1>vModel</h1>
+	<input type="checkbox" v-model="isChecked" />
+	<p>{{ isChecked ? "Checked" : "Not Checked" }}</p>
+
+	<h1>vFor</h1>
+	<ul>
+		<li v-for="item in items" :key="item.id">{{ item.name }}</li>
+	</ul>
+	<h1>@click</h1>
+	<button @click="handleClick">Click me</button>
 </template>
 
 <script>
